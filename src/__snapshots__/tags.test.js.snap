@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@analytics > tags createViewTagHandler() creates view tag handler functions from provided tag scenarios 1`] = `
+Object {
+  "bar": [Function],
+  "baz": [Function],
+  "foo": [Function],
+  "quz": [Function],
+}
+`;
+
+exports[`@analytics > tags createViewTagHandler() view tag exposes tag options 1`] = `
+Object {
+  "name": "foo",
+  "optionA": Array [
+    true,
+    false,
+  ],
+  "optionB": Object {
+    "foo": true,
+  },
+}
+`;
+
+exports[`@analytics > tags createViewTagHandler() view tag exposes tag options 2`] = `
+Object {
+  "name": "bar",
+}
+`;
+
+exports[`@analytics > tags createViewTagHandler() view tag exposes tag options 3`] = `
+Object {
+  "name": "baz",
+}
+`;
+
+exports[`@analytics > tags createViewTagHandler() view tag exposes tag options 4`] = `
+Object {
+  "name": "quz",
+}
+`;
+
+exports[`@analytics > tags tagging scenarios api 1`] = `
+Object {
+  "backInteraction": [Function],
+  "businessErrorMessage": [Function],
+  "callInteraction": [Function],
+  "helpInteraction": [Function],
+  "linkInteraction": [Function],
+  "loaderClose": [Function],
+  "loaderOpen": [Function],
+  "miscInteraction": [Function],
+  "modalClose": [Function],
+  "modalOpen": [Function],
+  "notificationMessage": [Function],
+  "overlayClose": [Function],
+  "overlayOpen": [Function],
+  "pageNameUpdateView": [Function],
+  "pageView": [Function],
+  "pdfInteraction": [Function],
+  "printInteraction": [Function],
+  "revealInteraction": [Function],
+  "sendValuesToAdobe": [Function],
+  "sliderClose": [Function],
+  "sliderOpen": [Function],
+  "submitInteraction": [Function],
+  "submitInteractionWithValidation": [Function],
+  "systemErrorMessage": [Function],
+  "userErrorMessage": [Function],
+  "userInput": [Function],
+}
+`;
+
+exports[`@analytics > tags tagging scenarios sendValuesToAdobe() adds values to the ddl that matches the array of passed in strings 1`] = `Object {}`;
+
+exports[`@analytics > tags tagging scenarios submitInteractionWithValidation() will also send values to adobe if an analytics object is passed in 1`] = `Object {}`;

@@ -1,0 +1,128 @@
+{
+  "ddl": {
+    "page": {
+      "nbs_environment": null,
+      "nbs_server": null,
+      "pageInfo": {
+        "pageName": null,
+        "nbs_page_load_time": null,
+        "nbs_page_responsive_state": null,
+        "nbs_page_responsive_orientation": null
+      },
+      "category": {
+        "primaryCategory": "over payment application",
+        "nbs_sub_category_1": null,
+        "nbs_sub_category_2": null,
+        "nbs_sub_category_3": null
+      }
+    },
+
+    "nbs_message": [],
+    "nbs_user_input": [],
+    "nbs_element_interaction": [],
+    "nbs_app_mortgage": {},
+
+    "nbs_user": {
+      "nbs_user_application_route": null
+    }
+  },
+
+  "regionProperties": {
+    "view": ["page"],
+    "action": ["nbs_user_input", "nbs_element_interaction", "nbs_message"],
+    "context": ["nbs_user", "nbs_app_mortgage"]
+  },
+
+  "itemsKeyMap": {
+    "nbs_message": {
+      "category": null,
+      "text": null,
+      "cause": null
+    },
+
+    "nbs_user_input": {
+      "name": "nbs_input_name",
+      "status": "nbs_input_validation_status",
+      "message": "nbs_input_validation_message"
+    },
+
+    "nbs_element_interaction": {
+      "type": "nbs_interaction_type",
+      "label": "nbs_interaction_label"
+    }
+  },
+
+  "page": {
+    "PREFIX": "nbs-aws",
+    "TYPE": "application",
+    "APP_NAME": "OverPayment",
+    "INITIAL": "initial load",
+
+    "types": {
+      "LOADER": "loader"
+    },
+    "orientations": {
+      "PORTRAIT": "portrait",
+      "LANDSCAPE": "landscape",
+      "SQUARE": "square"
+    },
+    "sizes": {
+      "SMALL": "small",
+      "MEDIUM": "medium",
+      "LARGE": "large"
+    }
+  },
+
+  "valueMaps": {
+    "environments": {
+      "home-mumo-dev": "dev",
+      "home-mumo-prd": "live",
+      "home-afford-dev-rtl": "dev",
+      "home-afford-sit-rtl": "sit"
+    },
+
+    "routes": {
+      "referrers": {
+        "://(www.)?nationwide.co.uk": "nationwide.co.uk",
+        "://onlinebanking.nationwide.co.uk": "internet bank",
+        "^$": "external"
+      },
+      "urlParams": {
+        "JId": "banking app"
+      }
+    },
+
+    "inputValidity": {
+      "true": "passed",
+      "false": "failed",
+      "null": "none"
+    }
+  },
+
+  "types": {
+    "action": {
+      "SUBMIT": "submit",
+      "INPUT": "user_input_complete",
+      "DEFAULT": "misc_interaction"
+    },
+
+    "interaction": {
+      "?LINK": "external link",
+      "SUBMIT": "submit",
+      "REVEAL": "reveal",
+      "HELP": "help icon",
+      "PRINT": "print",
+      "PDF": "save pdf",
+      "CALL": "click to call",
+      "BACK": "back",
+      "MISC": "misc"
+    },
+
+    "message": {
+      "USER": "user error",
+      "BUSINESS": "business error",
+      "SYSTEM": "system error",
+      "NOTIFICATION": "notification"
+    }
+  }
+}

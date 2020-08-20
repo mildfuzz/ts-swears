@@ -1,0 +1,40 @@
+{
+  "name": "home-analytics",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nbs-digital/home-analytics",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbs-digital/home-analytics"
+  },
+  "description": "Tools for interacting with Adobe",
+  "keywords": [
+    "adobe",
+    "analytics"
+  ],
+  "targets": {
+    "app": {
+      "distDir": "./dist"
+    }
+  },
+  "author": "John Farrow",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "prettier": "2.0.5"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "parcel build src/index.ts --out-dir ./dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "lodash": "^4.17.21",
+    "parcel-plugin-typescript": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tsdef": "0.0.14"
+  }
+}

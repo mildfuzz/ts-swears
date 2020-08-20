@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@analytics > ddl addInteraction() adds contextual interaction item 1`] = `
+Object {
+  "nbs_element_interaction": Array [
+    Object {
+      "nbs_interaction_label": "label for misc",
+      "nbs_interaction_type": "misc",
+    },
+    Object {
+      "nbs_interaction_label": "label for back",
+      "nbs_interaction_type": "back",
+    },
+    Object {
+      "nbs_interaction_label": "label for click to call",
+      "nbs_interaction_type": "click to call",
+    },
+    Object {
+      "nbs_interaction_label": "label for save pdf",
+      "nbs_interaction_type": "save pdf",
+    },
+    Object {
+      "nbs_interaction_label": "label for print",
+      "nbs_interaction_type": "print",
+    },
+    Object {
+      "nbs_interaction_label": "label for help icon",
+      "nbs_interaction_type": "help icon",
+    },
+    Object {
+      "nbs_interaction_label": "label for reveal",
+      "nbs_interaction_type": "reveal",
+    },
+    Object {
+      "nbs_interaction_label": "label for submit",
+      "nbs_interaction_type": "submit",
+    },
+    Object {
+      "nbs_interaction_label": "label for external link",
+      "nbs_interaction_type": "external link",
+    },
+  ],
+}
+`;
+
+exports[`@analytics > ddl addMessage() adds contextual message item 1`] = `
+Object {
+  "nbs_message": Array [
+    Object {
+      "category": "notification",
+      "cause": "cause for notification",
+      "text": "message for notification",
+    },
+    Object {
+      "category": "system error",
+      "cause": "cause for system error",
+      "text": "message for system error",
+    },
+    Object {
+      "category": "business error",
+      "cause": "cause for business error",
+      "text": "message for business error",
+    },
+    Object {
+      "category": "user error",
+      "cause": "cause for user error",
+      "text": "message for user error",
+    },
+  ],
+}
+`;
+
+exports[`@analytics > ddl addUserInput() adds contextual user input item with optional message, validation status, and apply defaults flag 1`] = `
+Object {
+  "nbs_user_input": Array [
+    Object {
+      "nbs_input_name": "foo input 7",
+      "nbs_input_validation_message": "",
+      "nbs_input_validation_status": "passed",
+    },
+    Object {
+      "nbs_input_name": "foo input 6",
+      "nbs_input_validation_message": "",
+      "nbs_input_validation_status": "passed",
+    },
+    Object {
+      "nbs_input_name": "foo input 5",
+      "nbs_input_validation_message": "foo input 5 error",
+      "nbs_input_validation_status": "failed",
+    },
+    Object {
+      "nbs_input_name": "foo input 4",
+      "nbs_input_validation_message": "foo input 4 passed",
+      "nbs_input_validation_status": "passed",
+    },
+    Object {
+      "nbs_input_name": "foo input 3",
+      "nbs_input_validation_message": "",
+      "nbs_input_validation_status": "passed",
+    },
+    Object {
+      "nbs_input_name": "foo input 2",
+      "nbs_input_validation_message": "foo input 2 success",
+      "nbs_input_validation_status": "none",
+    },
+    Object {
+      "nbs_input_name": "foo input 1",
+      "nbs_input_validation_message": "",
+      "nbs_input_validation_status": "none",
+    },
+  ],
+}
+`;
+
+exports[`@analytics > ddl getSource() getSource returns context data if called with a context property 1`] = `
+Object {
+  "nbs_app_mortgage": Object {},
+  "nbs_user": Object {
+    "nbs_user_application_route": null,
+  },
+}
+`;
+
+exports[`@analytics > ddl getSource() getSource returns global digital if called with an action property 1`] = `
+Object {
+  "page": Object {
+    "pageInfo": Object {
+      "pageName": "",
+    },
+  },
+}
+`;
+
+exports[`@analytics > ddl getSource() getSource returns global digital if called with the page property 1`] = `
+Object {
+  "page": Object {
+    "pageInfo": Object {
+      "pageName": "",
+    },
+  },
+}
+`;
+
+exports[`@analytics > ddl getSource() getSource returns initial view data otherwise 1`] = `
+Object {
+  "nbs_element_interaction": Array [],
+  "nbs_message": Array [],
+  "nbs_user_input": Array [],
+  "page": Object {
+    "category": Object {
+      "nbs_sub_category_1": null,
+      "nbs_sub_category_2": null,
+      "nbs_sub_category_3": null,
+      "primaryCategory": "over payment application",
+    },
+    "nbs_environment": null,
+    "nbs_server": null,
+    "pageInfo": Object {
+      "nbs_page_load_time": null,
+      "nbs_page_responsive_orientation": null,
+      "nbs_page_responsive_state": null,
+      "pageName": null,
+    },
+  },
+}
+`;
+
+exports[`@analytics > ddl refresh() merges contextual data with ddl 1`] = `
+Object {
+  "nbs_user_input": Array [
+    Object {
+      "nbs_input_name": "name",
+      "nbs_input_validation_message": "message",
+      "nbs_input_validation_status": "passed",
+    },
+  ],
+}
+`;
+
+exports[`@analytics > ddl replceMessage() adds contextual message item 1`] = `
+Object {
+  "nbs_message": Array [
+    Object {
+      "category": "notification",
+      "cause": "cause for notification",
+      "text": "message for notification",
+    },
+    Object {
+      "category": "system error",
+      "cause": "cause for system error",
+      "text": "message for system error",
+    },
+    Object {
+      "category": "business error",
+      "cause": "cause for business error",
+      "text": "message for business error",
+    },
+    Object {
+      "category": "user error",
+      "cause": "cause for user error",
+      "text": "message for user error",
+    },
+  ],
+}
+`;
+
+exports[`@analytics > ddl setUserApplicationRoute() updates ddl with user route 1`] = `Object {}`;
+
+exports[`@analytics > ddl updatePageName() update page name directly in digitalData object 1`] = `
+Object {
+  "after": Object {
+    "page": Object {
+      "category": "",
+      "pageInfo": Object {
+        "pageName": "nbs-aws:application:overpayment:bar 1:bar 2",
+      },
+    },
+  },
+  "before": Object {
+    "page": Object {
+      "category": "",
+      "pageInfo": Object {
+        "pageName": "nbs-aws:application:overpayment:foo",
+      },
+    },
+  },
+}
+`;

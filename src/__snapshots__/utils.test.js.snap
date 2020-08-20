@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@analytics > utils formatFormikErrors should format formik errors object for the analytics message 1`] = `
+Array [
+  Object {
+    "cause": "loanAmount",
+    "message": "Enter a loan amount.",
+  },
+  Object {
+    "cause": "mortgageLength.months",
+    "message": "Length of mortgage must include a month.",
+  },
+  Object {
+    "cause": "mortgageLength.years",
+    "message": "Length of mortgage must include a year.",
+  },
+  Object {
+    "cause": "propertyValue",
+    "message": "Enter a property value.",
+  },
+  Object {
+    "cause": "transactionType",
+    "message": "Choose an option.",
+  },
+  Object {
+    "cause": "dependents.0.age",
+    "message": "Enter an age",
+  },
+  Object {
+    "cause": "dependents.1.age",
+    "message": "Enter an age",
+  },
+]
+`;
+
+exports[`@analytics > utils getDeviceData() returns device data with orientation & responsive state 1`] = `
+Array [
+  Array [
+    "1x1",
+    Object {
+      "nbs_page_responsive_orientation": "square",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "300x300",
+    Object {
+      "nbs_page_responsive_orientation": "square",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "3x4",
+    Object {
+      "nbs_page_responsive_orientation": "portrait",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "768x1024",
+    Object {
+      "nbs_page_responsive_orientation": "portrait",
+      "nbs_page_responsive_state": "medium",
+    },
+  ],
+  Array [
+    "9x16",
+    Object {
+      "nbs_page_responsive_orientation": "portrait",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "720x1280",
+    Object {
+      "nbs_page_responsive_orientation": "portrait",
+      "nbs_page_responsive_state": "medium",
+    },
+  ],
+  Array [
+    "5x4",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "1280x1024",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "large",
+    },
+  ],
+  Array [
+    "8x5",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "1680x1050",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "large",
+    },
+  ],
+  Array [
+    "16x9",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "small",
+    },
+  ],
+  Array [
+    "1920x1080",
+    Object {
+      "nbs_page_responsive_orientation": "landscape",
+      "nbs_page_responsive_state": "large",
+    },
+  ],
+]
+`;
+
+exports[`@analytics > utils getEntryRoute() with blank referrer and matched/unmatched URL param(s) 1`] = `
+Array [
+  "banking app",
+  "banking app",
+  "banking app",
+  "banking app",
+  "banking app",
+  "banking app",
+  "external",
+  "external",
+  "external",
+]
+`;
+
+exports[`@analytics > utils getEntryRoute() with matched/unmatched referrers 1`] = `
+Array [
+  "nationwide.co.uk",
+  "nationwide.co.uk",
+  "nationwide.co.uk",
+  "nationwide.co.uk",
+  "internet bank",
+  "internet bank",
+  "external",
+  "external",
+  "external",
+]
+`;
+
+exports[`@analytics > utils getServiceData() returns service properties with mapped environment name 1`] = `
+Array [
+  Object {
+    "nbs_environment": "local",
+    "nbs_server": "http://localhost",
+  },
+  Object {
+    "nbs_environment": "dev",
+    "nbs_server": "http://localhost",
+  },
+  Object {
+    "nbs_environment": "live",
+    "nbs_server": "http://localhost",
+  },
+  Object {
+    "nbs_environment": "unknown",
+    "nbs_server": "http://localhost",
+  },
+]
+`;
+
+exports[`@analytics > utils load time measuring initial load start time 1`] = `
+Object {
+  "nbs-aws:application:overpayment:initial load": 101,
+}
+`;
+
+exports[`@analytics > utils load time measuring loadEnd() sets & returns page load duration 1`] = `
+Object {
+  "withDate": Object {
+    "end": Object {
+      "bar": 10,
+      "foo": 10,
+      "nbs-aws:application:overpayment:initial load": 101,
+    },
+    "start": Object {
+      "bar": 111,
+      "foo": 10,
+      "nbs-aws:application:overpayment:initial load": 101,
+    },
+  },
+  "withPerf": Object {
+    "end": Object {
+      "foo": 10,
+      "nbs-aws:application:overpayment:initial load": 101,
+    },
+    "start": Object {
+      "foo": 222,
+      "nbs-aws:application:overpayment:initial load": 101,
+    },
+  },
+}
+`;
+
+exports[`@analytics > utils load time measuring loadStart() sets & returns page load start time 1`] = `
+Object {
+  "bar": 111,
+  "foo": 222,
+  "nbs-aws:application:overpayment:initial load": 101,
+}
+`;
+
+exports[`@analytics > utils page categories getPageCategories() returns correctly constructed object 1`] = `
+Array [
+  Object {
+    "nbs_sub_category_1": "nbs-aws:application",
+    "nbs_sub_category_2": "nbs-aws:application:overpayment",
+    "nbs_sub_category_3": "nbs-aws:application:overpayment",
+  },
+  Object {
+    "nbs_sub_category_1": "nbs-aws:application",
+    "nbs_sub_category_2": "nbs-aws:application:overpayment",
+    "nbs_sub_category_3": "nbs-aws:application:overpayment:foo 1",
+  },
+  Object {
+    "nbs_sub_category_1": "nbs-aws:application",
+    "nbs_sub_category_2": "nbs-aws:application:overpayment",
+    "nbs_sub_category_3": "nbs-aws:application:overpayment:bar 1",
+  },
+]
+`;
+
+exports[`@analytics > utils page name formatting getPageName() returns lowercase & trimmed page name string 1`] = `
+Array [
+  "nbs-aws:application:overpayment",
+  "nbs-aws:application:overpayment",
+  "nbs-aws:application:overpayment",
+  "nbs-aws:application:overpayment",
+  "nbs-aws:application:overpayment",
+  "nbs-aws:application:overpayment:1:0:foo:bar",
+]
+`;
+
+exports[`@analytics > utils page name formatting getPageNameSections() returns page name sections array with category prefixes 1`] = `
+Array [
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    0,
+  ],
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    null,
+  ],
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    false,
+  ],
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    undefined,
+  ],
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    "",
+  ],
+  Array [
+    "nbs-aws",
+    "application",
+    "OverPayment",
+    0,
+    1,
+    "0",
+    "foo",
+    "bar",
+  ],
+]
+`;
